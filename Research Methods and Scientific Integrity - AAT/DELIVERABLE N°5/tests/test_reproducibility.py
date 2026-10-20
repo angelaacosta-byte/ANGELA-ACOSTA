@@ -1,5 +1,5 @@
 """Automated reproducibility checks. Run from the repository root:  PYTHONHASHSEED=0 pytest -v"""
-import hashlib, os, sys
+import hashlib, os, subprocess, sys
 import pandas as pd
 import pytest
 
@@ -14,6 +14,16 @@ EXPECTED_MD5 = "5afc23b9622f8f9ffa60824f4e97d0d5"   # data/breast_cancer.csv
 EXPECTED_SEED42 = 0.97367                            # README "Expected output"
 EXPECTED_HEADLINE = (0.9786, 0.0031)                 # mean, SD across 5 seeds
 TOL = 1e-3                                           # tolerance for floating-point differences
+
+
+def is_original_repo():
+    """True when this folder is the root of its own Git repository (the original repro-lab), not a copy."""
+    try:
+        top = subprocess.run(["git", "rev-parse", "--show-toplevel"], capture_output=True,
+                             text=True, check=True, cwd=ROOT).stdout.strip()
+        return os.path.realpath(top) == os.path.realpath(ROOT)
+    except Exception:
+        return False
 
 
 def test_data_hash_matches():
@@ -46,7 +56,9 @@ def test_results_table_is_reproduced_by_script():
     assert list(fresh["params.seed"]) == list(committed["params.seed"])
     for col in ["metrics.accuracy_mean", "metrics.accuracy_sd"]:
         assert fresh[col].to_numpy() == pytest.approx(committed[col].to_numpy(), abs=TOL)
-    if fresh["params.git_commit"].iloc[0] != "unknown":           # only when git history is available
+    if fresh["params.git_commit"].iloc[0] != "unknown" and is_original_repo():
+        # The code-commit check only applies in the original repository (repro-lab).
+        # In a copy inside another repository the code has a different commit ID, while the numbers still match.
         assert (fresh["params.git_commit"] == committed["params.git_commit"].astype(str)).all()
 
 

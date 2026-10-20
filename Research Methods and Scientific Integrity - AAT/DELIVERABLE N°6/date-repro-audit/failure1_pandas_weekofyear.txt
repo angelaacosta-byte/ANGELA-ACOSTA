@@ -1,0 +1,9 @@
+Finish loading data...
+Traceback (most recent call last):
+  File "/tmp/claude-0/-home-claude/0ceb8a9e-31a9-589c-9faa-0f5e6e88a507/scratchpad/run_modern/preprocess_data.py", line 148, in <module>
+    train = preprocess(train)
+            ^^^^^^^^^^^^^^^^^
+  File "/tmp/claude-0/-home-claude/0ceb8a9e-31a9-589c-9faa-0f5e6e88a507/scratchpad/run_modern/preprocess_data.py", line 63, in preprocess
+    df.loc[:, 'SGD.WeekofYear'] = df['sgd.date'].dt.weekofyear
+                                  ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+AttributeError: 'DatetimeProperties' object has no attribute 'weekofyear'

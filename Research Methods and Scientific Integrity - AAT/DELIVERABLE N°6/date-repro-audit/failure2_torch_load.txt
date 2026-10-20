@@ -1,0 +1,51 @@
+Namespace(model_name='DATE', epoch=5, dim=16, lr=0.005, l2=0.01, alpha=10, beta=0.0, head_num=4, use_self=1, fusion='concat', agg='sum', act='relu', device='cpu', output='full.csv', save=1)
+Ranger optimizer loaded. 
+Gradient Centralization usage = True
+GC applied to both conv and fc layers
+Validate at epoch 1
+CLS loss: 0.2340, REG loss: 110704.4281
+Over-all F1:0.3602, AUC:0.8180, F1-top:0.1814
+Evaluate at epoch 1
+CLS loss: 0.2344, REG loss: 117482.8841
+Over-all F1:0.3582, AUC:0.8116, F1-top:0.1911
+Validate at epoch 2
+CLS loss: 0.2884, REG loss: 110704.4281
+Over-all F1:0.2235, AUC:0.7869, F1-top:0.1351
+Evaluate at epoch 2
+CLS loss: 0.2899, REG loss: 117482.8841
+Over-all F1:0.2075, AUC:0.7822, F1-top:0.1273
+Validate at epoch 3
+CLS loss: 0.2899, REG loss: 110694.5647
+Over-all F1:0.2710, AUC:0.7649, F1-top:0.1522
+Evaluate at epoch 3
+CLS loss: 0.2920, REG loss: 117474.3473
+Over-all F1:0.2591, AUC:0.7574, F1-top:0.1423
+Validate at epoch 4
+CLS loss: 0.3513, REG loss: 110694.8896
+Over-all F1:0.1987, AUC:0.7061, F1-top:0.1342
+Evaluate at epoch 4
+CLS loss: 0.3530, REG loss: 117474.5966
+Over-all F1:0.2067, AUC:0.7010, F1-top:0.1289
+Validate at epoch 5
+CLS loss: 0.3898, REG loss: 110693.6171
+Over-all F1:0.1798, AUC:0.6715, F1-top:0.1260
+Evaluate at epoch 5
+CLS loss: 0.3913, REG loss: 117473.4171
+Over-all F1:0.1834, AUC:0.6673, F1-top:0.1183
+
+--------Evaluating DATE model---------
+Traceback (most recent call last):
+  File "/tmp/claude-0/-home-claude/0ceb8a9e-31a9-589c-9faa-0f5e6e88a507/scratchpad/run_modern/train.py", line 254, in <module>
+    overall_f1, auc, precisions, recalls, f1s, revenues = evaluate(save_model)
+                                                          ^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/claude-0/-home-claude/0ceb8a9e-31a9-589c-9faa-0f5e6e88a507/scratchpad/run_modern/train.py", line 170, in evaluate
+    best_model = torch.load(model_path)
+                 ^^^^^^^^^^^^^^^^^^^^^^
+  File "/tmp/claude-0/-home-claude/0ceb8a9e-31a9-589c-9faa-0f5e6e88a507/scratchpad/modern/lib/python3.12/site-packages/torch/serialization.py", line 1614, in load
+    raise pickle.UnpicklingError(_get_wo_message(str(e))) from None
+_pickle.UnpicklingError: Weights only load failed. This file can still be loaded, to do so you have two options, [1mdo those steps only if you trust the source of the checkpoint[0m. 
+	(1) In PyTorch 2.6, we changed the default value of the `weights_only` argument in `torch.load` from `False` to `True`. Re-running `torch.load` with `weights_only` set to `False` will likely succeed, but it can result in arbitrary code execution. Do it only if you got the file from a trusted source.
+	(2) Alternatively, to load with `weights_only=True` please check the recommended steps in the following error message.
+	WeightsUnpickler error: Unsupported global: GLOBAL torch.nn.parallel.data_parallel.DataParallel was not an allowed global by default. Please use `torch.serialization.add_safe_globals([torch.nn.parallel.data_parallel.DataParallel])` or the `torch.serialization.safe_globals([torch.nn.parallel.data_parallel.DataParallel])` context manager to allowlist this global if you trust this class/function.
+
+Check the documentation of torch.load to learn more about types accepted by default with weights_only https://pytorch.org/docs/stable/generated/torch.load.html.

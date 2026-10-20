@@ -1,0 +1,13 @@
+diff --git a/train.py b/train.py
+index eb5f951..ee5daef 100755
+--- a/train.py
++++ b/train.py
+@@ -167,7 +167,7 @@ def evaluate(save_model):
+     print()
+     print("--------Evaluating DATE model---------")
+     # create best model
+-    best_model = torch.load(model_path)
++    best_model = torch.load(model_path, weights_only=False)
+     best_model.eval()
+ 
+     # get threshold

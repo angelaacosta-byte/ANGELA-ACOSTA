@@ -1,0 +1,40 @@
+Namespace(act='relu', agg='sum', alpha=10, beta=0.0, device='cpu', dim=16, epoch=5, fusion='concat', head_num=4, l2=0.01, lr=0.005, model_name='DATE', output='run2020', save=1, use_self=1)
+Ranger optimizer loaded. 
+Gradient Centralization usage = True
+GC applied to both conv and fc layers
+Validate at epoch 1
+CLS loss: 0.2252, REG loss: 110704.4281
+Over-all F1:0.3439, AUC:0.8167, F1-top:0.1860
+Evaluate at epoch 1
+CLS loss: 0.2259, REG loss: 117482.8841
+Over-all F1:0.3392, AUC:0.8125, F1-top:0.1957
+Validate at epoch 2
+CLS loss: 0.2905, REG loss: 110704.4281
+Over-all F1:0.1794, AUC:0.7924, F1-top:0.1419
+Evaluate at epoch 2
+CLS loss: 0.2904, REG loss: 117482.8841
+Over-all F1:0.1685, AUC:0.7901, F1-top:0.1410
+Validate at epoch 3
+CLS loss: 0.3340, REG loss: 110704.4281
+Over-all F1:0.1704, AUC:0.7351, F1-top:0.1341
+Evaluate at epoch 3
+CLS loss: 0.3320, REG loss: 117482.8841
+Over-all F1:0.1696, AUC:0.7302, F1-top:0.1362
+Validate at epoch 4
+CLS loss: 0.3608, REG loss: 110704.4281
+Over-all F1:0.1646, AUC:0.6817, F1-top:0.1219
+Evaluate at epoch 4
+CLS loss: 0.3594, REG loss: 117482.8841
+Over-all F1:0.1633, AUC:0.6740, F1-top:0.1245
+Early stopping...
+
+--------Evaluating DATE model---------
+CLS loss: 0.2252, REG loss: 110704.4281
+CLS loss: 0.2259, REG loss: 117482.8841
+Saving result... ./results/run2020
+
+Metrics:
+f1:0.3392 auc:0.8125
+Pr@1:0.3214 Pr@2:0.3402 Pr@5:0.3023 Pr@10:0.2869
+Re@1:0.0425 Re@2:0.0897 Re@5:0.1989 Re@10:0.3776
+Rev@1:0.0413 Rev@2:0.0894 Rev@5:0.2055 Rev@10:0.4029

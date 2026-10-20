@@ -1,0 +1,26 @@
+dict_keys(['raw', 'xgboost_data', 'revenue'])
+Finish loading data...
+Training xgboost model...
+------Evaluating xgboost model------
+F1-scre equals to:0.2046
+AUC = 0.7225, F1-score = 0.2046
+Checking top 1% suspicious transactions: 196
+Precision: 0.1531, Recall: 0.0202, Seized Revenue (Recall): 0.0215
+Checking top 2% suspicious transactions: 391
+Precision: 0.179, Recall: 0.0472, Seized Revenue (Recall): 0.0505
+Checking top 5% suspicious transactions: 976
+Precision: 0.2182, Recall: 0.1436, Seized Revenue (Recall): 0.1535
+Checking top 10% suspicious transactions: 1952
+Precision: 0.2024, Recall: 0.2664, Seized Revenue (Recall): 0.2782
+Training Logistic regression model...
+------Evaluating xgboost+LR model------
+F1-scre equals to:0.1473
+AUC = 0.6705, F1-score = 0.1473
+Checking top 1% suspicious transactions: 196
+Precision: 0.1429, Recall: 0.0189, Seized Revenue (Recall): 0.0209
+Checking top 2% suspicious transactions: 391
+Precision: 0.1611, Recall: 0.0425, Seized Revenue (Recall): 0.0456
+Checking top 5% suspicious transactions: 976
+Precision: 0.1814, Recall: 0.1194, Seized Revenue (Recall): 0.1275
+Checking top 10% suspicious transactions: 1952
+Precision: 0.168, Recall: 0.2212, Seized Revenue (Recall): 0.2274

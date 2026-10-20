@@ -1,0 +1,11 @@
+Finish loading data...
+Data size:
+(70456, 41) (10028, 41) (19516, 41)
+Checking data size...
+70456 (70456,) (70456,)
+10028 (10028,) (10028,)
+19516 (19516,) (19516,)
+Checking label distribution
+Training: 0.0817583024980424
+Validation: 0.08328832235065356
+Testing: 0.08223811900404814

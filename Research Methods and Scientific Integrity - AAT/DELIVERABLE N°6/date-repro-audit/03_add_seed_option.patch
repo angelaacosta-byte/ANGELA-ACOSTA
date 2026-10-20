@@ -1,0 +1,25 @@
+diff --git a/train.py b/train.py
+index eb5f951..d66c8c9 100755
+--- a/train.py
++++ b/train.py
+@@ -234,6 +234,7 @@ if __name__ == '__main__':
+     parser.add_argument('--device', type=str, default="cuda:0", help="device name for training")
+     parser.add_argument('--output', type=str, default="full.csv", help="Name of output file")
+     parser.add_argument('--save', type=int, default=1, help="save model or not")
++    parser.add_argument('--seed', type=int, default=None, help="[audit] random seed; omit to keep the original unseeded behaviour")
+ 
+     # args
+     args = parser.parse_args()
+@@ -250,6 +251,12 @@ if __name__ == '__main__':
+     use_self = args.use_self
+     agg = args.agg
+     print(args)
++    if args.seed is not None:  # [audit] seed every source of randomness used in training
++        import random
++        random.seed(args.seed)
++        np.random.seed(args.seed)
++        torch.manual_seed(args.seed)
++        torch.use_deterministic_algorithms(True)
+     train(args)
+     overall_f1, auc, precisions, recalls, f1s, revenues = evaluate(save_model)
+ 

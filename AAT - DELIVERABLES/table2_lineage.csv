@@ -1,8 +1,0 @@
-step,records,note
-01 raw Veritrade export,11586,
-02 after my manual first pass,3748,"-7,838 lines outside the parent-roll focus"
-   keep (rule),2968,
-   remove (rule),704,
-   excluded (unresolved review),50,
-   keep (expert),26,
-03 final parent-roll file,2994,keep (rule) + keep (expert)

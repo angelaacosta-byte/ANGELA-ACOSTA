@@ -1,0 +1,31 @@
+,mean_abs_shap
+gsm,2.131
+log_usd_kg,0.9833
+log_kg,0.9376
+origin_VIETNAM,0.8909
+origin_CHINA,0.5434
+origin_INDONESIA,0.4608
+month,0.2581
+Aduana_DESAGUADERO,0.2471
+channel_VERDE,0.2407
+supplier_known,0.2261
+product_towel,0.224
+channel_ROJO,0.1213
+product_toilet,0.0993
+hs_480300,0.0989
+origin_PORTUGAL,0.0982
+channel_NARANJA,0.0663
+origin_BOLIVIA,0.0593
+origin_TURQUÍA,0.0453
+origin_OTHER,0.0314
+Via_CARRETERO,0.0178
+product_napkin,0.0166
+Aduana_MARITIMA DEL CALLAO,0.0132
+origin_ITALIA,0.0038
+hs_481890,0.0
+origin_BRASIL,0.0
+hs_481820,0.0
+channel_NOT RECORDED,0.0
+Via_MARÍTIMO,0.0
+Aduana_TACNA,0.0
+product_other/unspecified,0.0

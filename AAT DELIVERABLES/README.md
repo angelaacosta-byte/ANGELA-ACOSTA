@@ -27,6 +27,7 @@ This study measures it from the import declarations themselves.
 | 5 | Reproducible ML pipeline on my data (automated check, 20 seeds) | https://github.com/angelaacosta-byte/repro-lab-roll-paper |
 | 6 | Reproducibility audit: DATE paper and my own data | [6.Reproducibility_Audit_My_Data](6.Reproducibility_Audit_My_Data) · DATE audit: https://github.com/angelaacosta-byte/date-repro-audit |
 | 7 | Model card and datasheet | [7.Model_card.md](7.Model_card.md) · [7.Datasheet.md](7.Datasheet.md) |
+| 8 | Full data-analysis notebook on my data (RQ1–RQ3) | [8.Data_Analysis_Notebook](8.Data_Analysis_Notebook) |
 
 ## Main results so far
 * Only **4.4%** of parent-roll records (2.2% of tonnage) declare recycled fibre or a certification; no significant trend 2020–2025.

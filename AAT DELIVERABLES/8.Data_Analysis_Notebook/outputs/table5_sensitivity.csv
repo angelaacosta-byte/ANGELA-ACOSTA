@@ -1,0 +1,7 @@
+scenario,label,positives,share_%,OR per year,p
+All records,sust,133,4.44,0.953,0.3432
+All records,recycled,123,4.11,0.884,0.0206
+Without anomalies,sust,119,4.06,0.981,0.7108
+Without anomalies,recycled,109,3.72,0.904,0.0725
+Without 2020–2021,sust,85,4.38,0.998,0.9857
+Without 2020–2021,recycled,75,3.87,0.867,0.1410

@@ -1,0 +1,11 @@
+factor,group,records,positives,recall,precision
+hs,480300,528,25,0.44,0.282
+hs,481820,21,0,,
+hs,481890,50,0,,
+product,napkin,24,0,,
+product,other/unspecified,24,6,0.0,
+product,toilet,69,3,0.667,1.0
+product,towel,482,16,0.562,0.243
+supplier_known,0,561,23,0.478,0.282
+supplier_known,1,38,2,0.0,
+overall,all,599,25,0.44,0.282

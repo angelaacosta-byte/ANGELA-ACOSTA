@@ -1,0 +1,18 @@
+dimension,check,raw (n),final (n),raw %,final %
+Completeness,FOB value missing,0,0.0,0.0,0.0
+Completeness,commercial description missing,0,0.0,0.0,0.0
+Completeness,importer missing,64,1.0,0.55,0.03
+Completeness,inspection channel missing,201,18.0,1.73,0.6
+Completeness,net kg missing,0,0.0,0.0,0.0
+Completeness,origin country missing,0,0.0,0.0,0.0
+Completeness,supplier missing,3154,1448.0,27.22,48.36
+Consistency,CIF value < FOB value,0,0.0,0.0,0.0
+Consistency,FOB per kg outside 0.3–5 US$,2894,4.0,24.98,0.13
+Consistency,gross kg < net kg,0,,0.0,
+Uniqueness,exact duplicate rows,0,0.0,0.0,0.0
+Uniqueness,same DAM + HS + description + kg,0,0.0,0.0,0.0
+Validity,FOB value <= 0,1,0.0,0.01,0.0
+Validity,HS code outside the 3 queried,0,0.0,0.0,0.0
+Validity,channel not VERDE/NARANJA/ROJO,201,18.0,1.73,0.6
+Validity,date outside 2020-2025,0,0.0,0.0,0.0
+Validity,net kg <= 0,7,0.0,0.06,0.0

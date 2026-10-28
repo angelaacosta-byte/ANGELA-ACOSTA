@@ -1,0 +1,10 @@
+check,result
+Data versions fingerprinted (MD5) and verified,PASS
+"Data-quality audit on 4 dimensions, raw vs final",PASS
+Cleaning re-run from code reproduces the final file exactly,PASS
+"Expert decisions documented in a file, not done by hand",PASS
+Anomaly screen stable across 20 seeds (mean Jaccard 0.76),CHECK
+Main result stable across 20 seeds (SD 0.021),PASS
+Profiles stable across 20 seeds (mean ARI 0.97),PASS
+Same seed gives identical result,PASS
+Firm names never shown in outputs,PASS

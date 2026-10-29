@@ -3,7 +3,7 @@
 **Thesis:** Sustainable Import Patterns of Tissue Parent Rolls in Peru (2020–2025): A Machine Learning Analysis of Customs Import Records
 **Author:** Angela Milén Acosta Ticona · Doctoral Program in Deep Tech, AI & Emerging Technologies, UNMSM · Course: Research Methods & Scientific Integrity in AI (Dr. Loveleen Gaur)
 
-**EN:** In Part 1 I audited a published paper (DATE, Kim et al., KDD 2020: https://github.com/angelaacosta-byte/date-repro-audit). Here I apply the same audit to **my own data and pipeline**: data versions, data quality, reproducible cleaning, anomaly stability, 20-seed stability, and the seeded vs unseeded test.
+**EN:** In Part 1 I audited a published paper (DATE, Kim et al., KDD 2020: https://github.com/angelaacosta-byte/date-repro-audit). Here I apply the same audit to **my own data and pipeline**: data versions, data quality, reproducible cleaning, anomaly stability, 20-seed stability, the seeded vs unseeded test, the Session 6 labs (leakage, twins, effect sizes) and the Session 6 scorecard.
 **ES:** En la Parte 1 audité un artículo publicado (DATE). Aquí aplico la misma auditoría a **mis propios datos**.
 
 ## Main findings · Hallazgos principales
@@ -15,8 +15,14 @@
 | Cleaning re-run from code | reproduces the final file **record by record** (2,968 kept by rules + 26 by documented expert decision) |
 | Anomaly screen, 20 seeds | 59–60 records flagged per seed; mean Jaccard 0.76 → only the **39 records flagged by all 20 seeds** are treated as anomalies |
 | Main model, 20 seeds | PR-AUC **0.4686 ± 0.0212** (base rate 0.0444), identical to the public repository `repro-lab-roll-paper` |
-| Import profiles, 20 seeds | K-Means k = 6, adjusted Rand index 0.98 → very stable |
+| Import profiles, 20 seeds | K-Means k = 6, adjusted Rand index 0.97 → very stable |
 | Seeded vs unseeded (DATE lesson) | seed 42 run 5 times → identical; no seed → PR-AUC varies between runs |
+| Session 6 Lab 2 (leakage) on my data | using the description as a feature inflates PR-AUC from 0.47 to 0.79 → the description is excluded |
+| Session 6 Lab 3 (twins) on my data | a random split lets the same importer into train and test and inflates PR-AUC to 0.60 → I split by importer |
+| Session 6 Lab 5 (effect size + CI) | recycled vs virgin price −15% [−17%, −12%], Cohen's d −0.68; H5 −0.7 pts [−2.4, +1.1], Cohen's h −0.03 → no detectable change |
+| Session 6 scorecard on my own work | **7.5 / 9** (Yes on 6 items, Partial on tuning, external validation and data availability) |
+
+![Session 6 traps on my data](figures/fig3_session6_traps.png)
 
 ![Result stability](figures/fig2_seed_stability.png)
 

@@ -1,0 +1,4 @@
+,PR-AUC mean (20 seeds),SD
+Clean: grouped by importer (my design),0.4686,0.0212
+Lab 3 trap: random split (importer twins),0.5977,0.0116
+Lab 2 trap: description used as a feature (leak),0.7941,0.0226

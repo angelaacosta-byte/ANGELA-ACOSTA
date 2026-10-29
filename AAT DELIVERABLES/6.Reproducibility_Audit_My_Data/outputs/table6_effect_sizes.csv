@@ -1,0 +1,4 @@
+result,effect,95% CI,effect size,p-value
+"Price: recycled vs virgin (FOB/kg, adjusted)",-14.6%,"[-16.9%, -12.3%]",Cohen's d = -0.68,5.1e-30
+H5: sustainable share 2024-25 minus 2020-21,-0.66 pts,"[-2.42, +1.10] pts",Cohen's h = -0.03,0.77 (one-sided)
+"Model PR-AUC, pooled out-of-fold (seed 42)",0.436,"[0.352, 0.528] bootstrap",9.8× the base rate,n/a

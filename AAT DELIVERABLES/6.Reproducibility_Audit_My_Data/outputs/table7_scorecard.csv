@@ -1,0 +1,10 @@
+checklist item,answer,evidence
+"Seeds reported, many runs?",Yes,Mean ± SD over 20 seeds for every model (Sections 5 and 7)
+Splits described?,Yes,5-fold cross-validation grouped by importer; temporal hold-out 2025 in the analysis notebook
+Leakage checked?,Yes,Preprocessing inside Pipelines; description excluded as a feature (Lab 2 shows the leak it avoids); grouped split (Lab 3)
+Tuning separated?,Partial,"Hyperparameters fixed in advance and never tuned on test data, but no nested cross-validation"
+Statistical test named?,Yes,Corrected resampled t-test for model comparison; z-test and logistic trend for H5; OLS with robust errors for price
+Effect size and CI?,Yes,"Cohen's d / h, 95% CIs and bootstrap CI for the model score (Section 7)"
+External validation?,Partial,New period (2025 hold-out) only; no other country or data source yet
+Compute documented?,Yes,"Linux-6.18.44-fc-v185-x86_64-with-glibc2.39, 2 CPU cores, no GPU, library versions in Section 0, runtime below"
+Code and data available?,Partial,Code public; anonymised feature table public (repro-lab-roll-paper); raw Veritrade files not shareable

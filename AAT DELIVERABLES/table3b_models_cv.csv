@@ -1,4 +1,0 @@
-,mean,std
-Majority class,0.045,0.005
-Logistic regression,0.47,0.261
-XGBoost,0.519,0.263

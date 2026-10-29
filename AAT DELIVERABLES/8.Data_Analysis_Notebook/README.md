@@ -1,3 +1,5 @@
+> **Supporting material, not a course deliverable:** the full analysis of my thesis data. It supports the Model Card (topic 7) and the results in the index.
+
 # Sustainable Import Patterns of Tissue Parent Rolls in Peru (2020–2025)
 
 **Author:** Angela Milén Acosta Ticona — Doctoral program, UNMSM
@@ -32,7 +34,7 @@ Two consecutive runs produce byte-identical tables in `outputs/`.
 * Only 4.4% of records (2.2% of tonnage) carry a sustainability signal; no significant trend 2020–2025 (H5 not supported).
 * Recycled-fibre parent rolls cost 12.9% less per kg than virgin ones, controlling for year, product and HS code.
 * Six import profiles (K-Means); the sustainability signal differs strongly across them.
-* XGBoost predicts the signal on 2025 data (PR-AUC 0.42 vs 0.04 baseline) but does not significantly beat logistic regression.
+* XGBoost predicts the signal on 2025 data (PR-AUC 0.42 vs 0.04 baseline) but does not significantly beat logistic regression (20 seeds × 5 grouped folds, corrected t-test p = 0.56).
 
 ## Ethics
 No human participants. Importer and supplier names are replaced by codes in all outputs. A proxy label is not proof that a firm is or is not sustainable.

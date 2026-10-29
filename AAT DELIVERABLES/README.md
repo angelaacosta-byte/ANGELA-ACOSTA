@@ -24,7 +24,7 @@ This study measures it from the import declarations themselves.
 | 2 | Method selection (method-fit matrix) | [2.Method_Fit_Matrix_Angela_Acosta.docx](2.Method_Fit_Matrix_Angela_Acosta.docx) |
 | 3 | Research protocol | [3.Research_Protocol_Angela_Acosta.docx](3.Research_Protocol_Angela_Acosta.docx) |
 | 4 | Systematic review and PRISMA 2020 | [4.Systematic_Review_Angela_Acosta.docx](4.Systematic_Review_Angela_Acosta.docx) |
-| 5 | Reproducible ML pipeline on my data (automated check, 20 seeds) | https://github.com/angelaacosta-byte/repro-lab-roll-paper |
+| 5 | Reproducible ML pipeline on my data (automated check, 20 seeds) | [5.Reproducible_ML_Pipeline](5.Reproducible_ML_Pipeline) · live check: https://github.com/angelaacosta-byte/repro-lab-roll-paper |
 | 6 | Reproducibility audit: DATE paper and my own data | [6.Reproducibility_Audit_My_Data](6.Reproducibility_Audit_My_Data) · DATE audit: https://github.com/angelaacosta-byte/date-repro-audit |
 | 7 | Model card and datasheet | [7.Model_card.md](7.Model_card.md) · [7.Datasheet.md](7.Datasheet.md) |
 | 8 | Full data-analysis notebook on my data (RQ1–RQ3) | [8.Data_Analysis_Notebook](8.Data_Analysis_Notebook) |

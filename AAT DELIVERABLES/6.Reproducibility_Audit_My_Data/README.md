@@ -1,3 +1,5 @@
+> **Role in the Design Science thesis (Nov 2026):** this audit is the technical evaluation of the data and model that the sustainable sourcing assistant uses (data quality, lineage, stability, leakage control). See [Deliverable 3, Version 5](../3.Research_Protocol_Angela_Acosta.docx).
+
 # Reproducibility Audit (Session 6) · Part 1: a published paper · Part 2: my own data
 
 **Thesis:** Sustainable Import Patterns of Tissue Parent Rolls in Peru (2020–2025): A Machine Learning Analysis of Customs Import Records

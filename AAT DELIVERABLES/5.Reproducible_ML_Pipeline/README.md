@@ -1,3 +1,5 @@
+> **Role in the Design Science thesis (Nov 2026):** this pipeline is the validated analytical engine of the sustainable sourcing assistant and its technical (formative) evaluation: 20 seeds, grouped validation, automated checks. See [Deliverable 3, Version 5](../3.Research_Protocol_Angela_Acosta.docx).
+
 > **Copy of** [github.com/angelaacosta-byte/repro-lab-roll-paper](https://github.com/angelaacosta-byte/repro-lab-roll-paper), placed here so all course topics are in one folder. The automated reproducibility check (badge below) runs in the original repository, because GitHub Actions only runs from a repository's root.
 >
 > **ES:** Copia del repositorio original, para tener todos los temas del curso en una sola carpeta. La verificación automática (la insignia de abajo) se ejecuta en el repositorio original, porque GitHub Actions solo funciona desde la raíz de un repositorio.

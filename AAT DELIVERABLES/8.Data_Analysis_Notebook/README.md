@@ -1,4 +1,6 @@
-> **Supporting material, not a course deliverable:** the full analysis of my thesis data. It supports the Model Card (topic 7) and the results in the index.
+> **Role in the Design Science thesis (Nov 2026):** this positivist analysis is **Phase 1 (problem diagnosis)** of the Design Science thesis and the source of the assistant's components. Its paradigm note below describes this phase. See [Deliverable 3, Version 5](../3.Research_Protocol_Angela_Acosta.docx).
+
+**Supporting material, not a course deliverable:** the full analysis of my thesis data. It supports the Model Card (topic 7) and the results in the index.
 
 # Sustainable Import Patterns of Tissue Parent Rolls in Peru (2020–2025)
 
